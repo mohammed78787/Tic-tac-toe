@@ -6,6 +6,30 @@ import babel from '@rolldown/plugin-babel'
 export default defineConfig({
   plugins: [
     react(),
-    babel({ presets: [reactCompilerPreset()] })
+    babel({ presets: [reactCompilerPreset()] }),
+    VitePWA({
+      registerType: 'autoUpdate',
+
+      manifest: {
+        name: 'Tic Tac Toe',
+        short_name: 'TicTacToe',
+        theme_color: '#111827',
+        background_color: '#111827',
+        display: 'standalone',
+        
+        icons: [
+          {
+            src: '/192.png',
+            sizes: '192x192',
+            type: 'image/png',
+          },
+          {
+            src: '/512.png',
+            sizes: '512x512',
+            type: 'image/png',
+          },
+        ],
+      },
+    }),
   ],
 })
