@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: cursive;
+  /* font-family: cursive; */
   background: linear-gradient(135deg, #0f172a, #1e293b, #111827);
   min-height: 100vh;
   display: flex;
