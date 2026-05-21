@@ -12,11 +12,11 @@ export default defineConfig({
 
       manifest: {
         name: 'Tic Tac Toe',
-        short_name: 'TicTacToe',
+        short_name: 'ْX-O',
         theme_color: '#111827',
         background_color: '#111827',
         display: 'standalone',
-        
+
         icons: [
           {
             src: '/192.png',
