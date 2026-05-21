@@ -15,13 +15,13 @@ function App() {
   let End = winner(square)
   let status
   if(End) {
-    status = "the winner is " + End
+    status = "the winner is " + End     // check for winner
   }
-  else if ((square.every((item)=> item !== null)) && !End) {
+  else if ((square.every((item)=> item !== null)) && !End) {  // check for draw
     status = "draw"
   }
   else {
-    status = "next player: " +(xturn? "x":"o")
+    status = "next player: " +(xturn? "x":"o") // game continud
   }
 
 
