@@ -17,9 +17,14 @@ function App() {
   if(End) {
     status = "the winner is " + End
   }
+  else if ((square.every((item)=> item !== null)) && !End) {
+    status = "draw"
+  }
   else {
     status = "next player: " +(xturn? "x":"o")
   }
+
+
  
 
   let execute = (i)=> {
